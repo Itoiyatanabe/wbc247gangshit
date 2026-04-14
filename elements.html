@@ -37,7 +37,7 @@
     <header class="header-area">
         <!-- Navbar Area -->
         <div class="newsbox-main-menu">
-            <div class="classy-nav-container breakpoint-off">
+            <div class="classy-nav-container breakpoint-off light left">
                 <div class="container-fluid">
                     <!-- Menu -->
                     <nav class="classy-navbar justify-content-between" id="newsboxNav">
@@ -62,7 +62,7 @@
                              <div class="classynav">
                                 <ul>
                                     <!-- WBC247 메뉴를 첫 번째로 이동 -->
-                                    <li><a>WBC247</a>
+                                    <li class="cn-dropdown-item has-down"><a>WBC247</a>
                                         <ul class="dropdown">
                                             <li><a href="index.html">Home</a></li>
                                             <li><a href="catagory.html">이용가이드</a></li>
@@ -70,13 +70,13 @@
                                             <li><a href="contact.html">주소 안내</a></li>
                                             <li><a href="elements.html">프라이빗 에이전시팀</a></li>
                                         </ul>
-                                    </li>
-                                    <li>
+                                    <span class="dd-trigger"></span></li>
+                                    <li class="megamenu-item">
                                         <a href="https://t.me/YK133" target="_blank">문의</a>
                                         <div class="megamenu"></div>
-                                    </li>
+                                    <span class="dd-trigger"></span></li>
                                     <!-- 지원게임 종류 메뉴를 세 번째로 이동 -->
-                                    <li><a>지원게임 종류</a>
+                                    <li class="megamenu-item"><a>지원게임 종류</a>
                                         <div class="megamenu">
                                             <ul class="single-mega cn-col-4">
                                                 <li class="title">스포츠</li>
@@ -119,18 +119,18 @@
                                                 <li><a>엑스볼</a></li>
                                             </ul>
                                         </div>
-                                    </li>
-                                    <li><a>스포츠</a>
+                                    <span class="dd-trigger"></span></li>
+                                    <li class="cn-dropdown-item has-down"><a>스포츠</a>
                                         <ul class="dropdown">
-                                            <li><a>축구</a></li>
-                                            <li><a>야구</a></li>
-                                            <li><a>농구</a></li>
-                                            <li><a>배구</a></li>
-                                            <li><a>e스포츠</a></li>
-                                            <li><a>실시간 안내</a></li>
-                                            <li><a>스포츠 이용가이드</a></li>
+                                            <li><a href="sports-guide.html#soccer">축구</a></li>
+                                            <li><a href="sports-guide.html#baseball">야구</a></li>
+                                            <li><a href="sports-guide.html#basketball">농구</a></li>
+                                            <li><a href="sports-guide.html#volleyball">배구</a></li>
+                                            <li><a href="sports-guide.html#esports">e스포츠</a></li>
+                                            <li><a href="sports-guide.html#live">실시간 안내</a></li>
+                                            <li><a href="sports-guide.html">스포츠 이용가이드</a></li>
                                         </ul>
-                                    </li>
+                                    <span class="dd-trigger"></span></li>
                                 </ul>
 
                                 <!-- Header Add Area -->
@@ -162,9 +162,9 @@
                         </div>
                         <div id="breakingNewsTicker" class="ticker">
                             <ul>
-                                <li></a> WBC247 공식 에이전시팀은 업계 최고 수준의 보상과 매주 최대 10% 페이백을 제공하며, 어디에서도 비교할 수 없는 혜택으로 최상의 만족을 드립니다.</li>
-                                <li></a> 타사와 차별화된 혜택으로 특별한 만족을 경험해보세요. 24시간 항시 대기하며, 최상의 서비스와 품격 있는 경험으로 보답해드리겠습니다.</a></li>
-                                <li></a> 오랜 기간 쌓아온 운영 경험을 바탕으로 고객 만족도 9.8점을 유지하고 있으며, 이용 중 불편사항이 있으시면 언제든지 신속하게 도움드리겠습니다.</a></li>
+                                <li> WBC247 공식 에이전시팀은 업계 최고 수준의 보상과 매주 최대 10% 페이백을 제공하며, 어디에서도 비교할 수 없는 혜택으로 최상의 만족을 드립니다.</li>
+                                <li> 타사와 차별화된 혜택으로 특별한 만족을 경험해보세요. 24시간 항시 대기하며, 최상의 서비스와 품격 있는 경험으로 보답해드리겠습니다.</li>
+                                <li> 오랜 기간 쌓아온 운영 경험을 바탕으로 고객 만족도 9.8점을 유지하고 있으며, 이용 중 불편사항이 있으시면 언제든지 신속하게 도움드리겠습니다.</li>
                             </ul>
                         </div>
                     </div>
@@ -233,24 +233,20 @@
                         </div>
                         <!-- Single Accordian Area -->
                         <div class="panel single-accordion">
-                            <h6>
-                                <a role="button" class="collapsed" aria-expanded="true" aria-controls="collapseTwo" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">이용 가이드가 잘 되어 있나요?
-                                        <span class="accor-open"><i class="fa fa-plus" aria-hidden="true"></i></span>
-                                        <span class="accor-close"><i class="fa fa-minus" aria-hidden="true"></i></span>
-                                        </a>
-                            </h6>
+                            <h6><a role="button" aria-expanded="false" aria-controls="collapseTwo" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">이용 가이드가 잘 되어 있나요?
+                                    <span class="accor-open"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                    <span class="accor-close"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                    </a></h6>
                             <div id="collapseTwo" class="accordion-content collapse">
                                 <p>네, WBC247은 처음 이용하시는 분들도 쉽게 적응하실 수 있도록 상세한 이용 가이드를 제공하고 있습니다. 각 게임별 특징과 이용 방법, 입출금 절차 등을 한눈에 확인하실 수 있습니다.</p>
                             </div>
                         </div>
                         <!-- Single Accordian Area -->
                         <div class="panel single-accordion">
-                            <h6>
-                                <a role="button" class="collapsed" aria-expanded="true" aria-controls="collapseThree" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">보안 및 안전성은 어떤가요?
-                                        <span class="accor-open"><i class="fa fa-plus" aria-hidden="true"></i></span>
-                                        <span class="accor-close"><i class="fa fa-minus" aria-hidden="true"></i></span>
-                                        </a>
-                            </h6>
+                            <h6><a role="button" aria-expanded="false" aria-controls="collapseThree" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">보안 및 안전성은 어떤가요?
+                                    <span class="accor-open"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                    <span class="accor-close"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                    </a></h6>
                             <div id="collapseThree" class="accordion-content collapse">
                                 <p>WBC247은 최첨단 보안 시스템을 도입하여 고객님의 소중한 정보를 안전하게 보호하고 있습니다. 또한 공정한 게임 환경 조성을 위해 최선을 다하고 있으며, 신뢰할 수 있는 서비스를 제공합니다.</p>
                             </div>
@@ -258,47 +254,26 @@
                     </div>
                 </div>
 
-                <!-- ##### Tabs ##### -->
+                <!-- ##### Tab Panes ##### -->
                 <div class="col-12 col-lg-6">
-                    <div class="newsbox-tabs-area mb-100">
-                        <ul class="nav nav-tabs" id="myTab" role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link" id="tab--1" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="false">스포츠</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" id="tab--2" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">카지노</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="tab--3" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="true">미니게임</a>
-                            </li>
-                        </ul>
-
-                        <div class="tab-content mb-100" id="myTabContent">
-                            <div class="tab-pane fade" id="tab1" role="tabpanel" aria-labelledby="tab--1">
-                                <div class="newsbox-tab-content">
-                                    <!-- Tab Text -->
-                                    <div class="newsbox-tab-text">
-                                        <p>WBC247 스포츠는 전 세계 다양한 리그와 종목을 지원하며, 실시간으로 변동되는 배당률과 경기 정보를 제공합니다. 축구, 농구, 야구 등 인기 종목은 물론 e스포츠까지 폭넓게 즐기실 수 있습니다.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade show active" id="tab2" role="tabpanel" aria-labelledby="tab--2">
-                                <div class="newsbox-tab-content">
-                                    <!-- Tab Text -->
-                                    <div class="newsbox-tab-text">
-                                        <p>라이브 카지노 섹션에서는 에볼루션, 프라그마틱 등 세계적인 게임사들의 콘텐츠를 만나보실 수 있습니다. 실제 카지노와 같은 생생한 현장감을 느끼며 게임을 즐겨보세요.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab--3">
-                                <div class="newsbox-tab-content">
-                                    <!-- Tab Text -->
-                                    <div class="newsbox-tab-text">
-                                        <p>미니게임은 빠르고 간편하게 즐길 수 있는 다양한 게임들로 구성되어 있습니다. 짧은 시간 안에 승부의 재미를 느낄 수 있는 미니게임들을 지금 바로 확인해 보세요.</p>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="elements-title mb-30">
+                        <h2>WBC247 게임 카테고리</h2>
+                    </div>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="tab-1" role="tabpanel">
+                            <p>WBC247 스포츠는 전 세계 다양한 리그와 종목을 지원하며, 실시간으로 변동되는 배당률과 경기 정보를 제공합니다. 축구, 농구, 야구 등 인기 종목은 물론 e스포츠까지 폭넓게 즐기실 수 있습니다.</p>
                         </div>
+                        <div class="tab-pane fade" id="tab-2" role="tabpanel">
+                            <p>라이브 카지노 섹션에서는 에볼루션, 프라그마틱 등 세계적인 게임사들의 콘텐츠를 만나보실 수 있습니다. 실제 카지노와 같은 생생한 현장감을 느끼며 게임을 즐겨보세요.</p>
+                        </div>
+                        <div class="tab-pane fade" id="tab-3" role="tabpanel">
+                            <p>미니게임은 빠르고 간편하게 즐길 수 있는 다양한 게임들로 구성되어 있습니다. 짧은 시간 안에 승부의 재미를 느낄 수 있는 미니게임들을 지금 바로 확인해 보세요.</p>
+                        </div>
+                    </div>
+                    <div class="nav nav-tabs mt-30" id="nav-tab" role="tablist">
+                        <a class="nav-item nav-link active" id="tab--1" data-toggle="tab" href="#tab-1" role="tab">스포츠</a>
+                        <a class="nav-item nav-link" id="tab--2" data-toggle="tab" href="#tab-2" role="tab">카지노</a>
+                        <a class="nav-item nav-link" id="tab--3" data-toggle="tab" href="#tab-3" role="tab">미니게임</a>
                     </div>
                 </div>
             </div>
@@ -308,45 +283,29 @@
 
     <!-- ##### Footer Area Start ##### -->
     <footer class="footer-area">
-        <!-- Footer Logo -->
         <div class="footer-logo mb-100">
             <a href="index.html"><img src="img/core-img/logo.png" alt=""></a>
         </div>
-        <!-- Footer Content -->
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <div class="footer-content text-center">
-                        <!-- Footer Nav -->
-                         <a href="https://t.me/YK133" target="_blank" title="텔레그램: @YK133">
-    <i class="fa fa-telegram" style="font-size:40px; color:#0088cc;"></i>
-</a>
-
+                        <a href="https://t.me/YK133" target="_blank"><i class="fa fa-telegram" style="font-size:40px; color:#0088cc;"></i></a>
                         <div class="footer-nav">
                             <ul>
-                                <li><a></a></li>
-                                <li><a>연락하기</a></li>
-                                <li><a></a></li>
+                                <li><a href="contact.html">연락하기</a></li>
                             </ul>
                         </div>
-                        <!-- Social Info -->
-                        
-                        <p class="mb-15">이 페이지에서는 지원게임 종류와 카테고리를 한눈에 확인할 수 있습니다. 스포츠, 라이브, 슬롯, 미니게임 등 다양한 섹션별 특징을 정리했으며, 각 카테고리에서 제공되는 대표 브랜드와 게임 유형을 쉽게 살펴볼 수 있도록 구성했습니다. </p>
-
-                        <!-- Copywrite Text -->
-                        <p class="copywrite-text"><a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-<p>
-    &copy; <script>document.write(new Date().getFullYear());</script> WBC247 All rights reserved.
-</p>
+                        <p class="mb-15">WBC247 공식 에이전시팀은 고객님의 안전과 만족을 최우선으로 생각합니다.</p>
+                        <p class="copywrite-text">&copy; 2026 WBC247 All rights reserved.</p>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-    <!-- ##### Footer Area Start ##### -->
+    <!-- ##### Footer Area End ##### -->
 
-    <!-- ##### All Javascript Script ##### -->
+    <!-- ##### All Javascript Files ##### -->
     <!-- jQuery-2.2.4 js -->
     <script src="js/jquery/jquery-2.2.4.min.js"></script>
     <!-- Popper js -->
